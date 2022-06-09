@@ -4,9 +4,6 @@ import {IndexContext} from "./Context/index"
 import { useState } from 'react';
 import Search from './SearchRange';
 import SearchTitle from './SearchTitle/index';
-import Carts from './Carts/index';
-import ImgMediaCard from './MediaCard/index';
-import { Routes, Route } from "react-router-dom";
 import Product from './Product/index';
 
 function App() {
@@ -84,11 +81,11 @@ function App() {
       },
     ]);
       const [value, setValue] = React.useState([0, 10]);
-      const [cardProducts, setCardProducts] = useState([]);
+      // const [cardProducts, setCardProducts] = useState([]);
   return (
     <>
       <IndexContext.Provider
-        value={{ products, value, setValue, cardProducts, setCardProducts }}
+        value={{ products, value, setValue}}
       >
         <SearchTitle />
         <Search />

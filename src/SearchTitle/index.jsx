@@ -9,7 +9,6 @@ const SearchTitle=({title})=> {
 
   };
 
-
   return (
     <>
       <Container sx={{paddingTop:"5rem"}}>
